@@ -14,7 +14,7 @@ RUNTIMES = {
     "arm64": ("aarch64", "81a359f1cfadd4da11766534c5913791cea55f26e1bb902cacd2a531bb1e4b2b"),
     "x86_64": ("x86_64", "65b195c9cedc1fef6767f044f9822069adbd1bd9204d424ece4628776fdc04bb"),
 }
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 
 def run(*args):
@@ -81,7 +81,7 @@ def main():
         plistlib.dump({
             "CFBundleName": "Trading Journal", "CFBundleDisplayName": "Trading Journal",
             "CFBundleIdentifier": "com.jungbtc.tradingjournal", "CFBundleExecutable": "TradingJournal",
-            "CFBundlePackageType": "APPL", "CFBundleShortVersionString": VERSION, "CFBundleVersion": "1",
+            "CFBundlePackageType": "APPL", "CFBundleShortVersionString": VERSION, "CFBundleVersion": "2",
             "CFBundleIconFile": "AppIcon", "LSMinimumSystemVersion": "12.0", "NSHighResolutionCapable": True,
             "NSAppTransportSecurity": {"NSAllowsLocalNetworking": True},
             "NSHumanReadableCopyright": "Original project © 2026 tj-bot contributors. Mac packaging © 2026 jungbtc. MIT License.",

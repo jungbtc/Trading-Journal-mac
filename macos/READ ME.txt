@@ -1,54 +1,56 @@
-TRADING JOURNAL FOR MAC
+온체인 매매일지 — Mac 앱 설치 안내
 
-INSTALL
-1. Open the DMG.
-2. Drag Trading Journal into Applications.
-3. Open Trading Journal from Applications.
-4. Choose a journal password, then use the setup wizard to add wallets and
-   read-only exchange/API keys. The setup code is filled in automatically.
+설치
+1. DMG 파일을 엽니다.
+2. Trading Journal을 응용 프로그램(Applications) 폴더로 끌어 놓습니다.
+3. 응용 프로그램 폴더에서 Trading Journal을 실행합니다.
+4. 매매일지 비밀번호를 만들고 설정 마법사에서 지갑 주소와 조회 전용
+   거래소·제공업체 API 키를 추가합니다. 설정 코드는 앱이 자동으로 입력합니다.
 
-Works on Apple Silicon and Intel Macs with macOS 12 Monterey or later.
-Python is included. No Terminal, Node, pip, or developer tools are needed.
-An internet connection and your own provider keys are needed to sync live data.
-The optional upstream AI features require a separately installed Claude CLI.
+macOS 12 Monterey 이상, Apple Silicon과 Intel Mac을 지원합니다.
+Python이 앱에 들어 있어 터미널, Node, pip, 개발 도구를 설치할 필요가 없습니다.
+실제 데이터 동기화에는 인터넷 연결과 본인의 제공업체 키가 필요합니다.
+선택 기능인 AI를 사용하려면 Claude CLI를 별도로 설치하고 로그인해야 합니다.
 
-SIGNING
-The GitHub release notes list this build's signing and notarization status.
-Developer ID releases are signed by Seung Oh Jung. Apple notarization checks
-the submitted package; it does not certify the accuracy of trading records.
-Download official releases from:
+서명과 공증
+GitHub 릴리스 설명에서 이 배포본의 서명·Apple 공증 상태를 확인하세요.
+Developer ID 배포본의 서명자는 Seung Oh Jung입니다.
+Apple 공증은 제출된 패키지를 검사하며, 매매일지 계산 결과를 보증하지 않습니다.
+공식 다운로드:
 https://github.com/jungbtc/Trading-Journal-mac/releases
 
-YOUR DATA
-The journal, settings and keys stay on this Mac in:
+내 데이터
+매매일지, 설정, 키는 이 Mac의 다음 폴더에 저장됩니다.
 ~/Library/Application Support/Trading Journal/
-Use Trading Journal > Open Data Folder to see it without Terminal.
-Replacing the app does not delete this folder. Deleting the app leaves it intact.
-The app only serves its dashboard on this computer (127.0.0.1).
-Quit the app to stop syncing. Leave it open while importing historical records.
-Closing the last window quits the app. It can take a few seconds to stop safely.
 
-If you forget the password, choose Trading Journal > Reset Login Password.
-This resets the login only; your journal and provider keys stay saved.
-If startup fails, choose Trading Journal > Open Logs for diagnostic files.
-Keep backups of your data folder. Do not share this folder or its credentials.
+Trading Journal 메뉴의 Open Data Folder를 누르면 폴더를 열 수 있습니다.
+앱을 교체하거나 삭제해도 데이터 폴더는 남습니다.
+대시보드는 이 Mac에서만 접속할 수 있습니다(127.0.0.1).
+앱을 종료하면 동기화가 멈춥니다. 과거 내역을 가져오는 동안 앱을 열어 두세요.
+마지막 창을 닫으면 앱도 종료됩니다. 정상 종료까지 몇 초 걸릴 수 있습니다.
 
-SHARING
-Send the DMG file to another person. It contains the app and bundled runtimes,
-with no personal wallets, journal, passwords, or API keys.
-Each person sets up their own journal after installing it.
+비밀번호를 잊었다면 Trading Journal > Reset Login Password를 선택하세요.
+로그인만 초기화하며 매매일지와 제공업체 키는 남습니다.
+실행에 문제가 있으면 Trading Journal > Open Logs에서 로그를 확인하세요.
+데이터 폴더는 따로 백업하세요. 이 폴더와 인증 정보는 다른 사람에게 보내지 마세요.
 
-SOURCE AND LICENSES
-Original project by extb001-afk and tj-bot contributors:
+친구에게 공유하기
+DMG 파일만 보내면 됩니다. 앱과 실행 환경이 들어 있으며,
+개인 지갑, 매매일지, 비밀번호, API 키는 포함되어 있지 않습니다.
+받는 사람은 설치 후 자신의 매매일지를 설정하면 됩니다.
+
+원작자와 라이선스
+원작: extb001-afk와 tj-bot 기여자
 https://github.com/extb001-afk/Trading-Journal
-The trading engine and dashboard are their work. Mac packaging by jungbtc:
+매매일지 계산 로직과 대시보드는 원작자들의 작업입니다.
+Mac 앱 포장과 배포: jungbtc
 https://github.com/jungbtc/Trading-Journal-mac
-Upstream snapshot: 8e9a70c (version 2026.10.12.8).
-MIT license: Trading Journal.app/Contents/Resources/app/LICENSE
-Bundled Python 3.12.14: Astral python-build-standalone release 20260901.
-Python licenses are included inside each bundled runtime. Dependency notices:
+원본 기준: 커밋 8e9a70c, 버전 2026.10.12.8
+MIT 라이선스: Trading Journal.app/Contents/Resources/app/LICENSE
+내장 Python 3.12.14: Astral Python Build Standalone, 릴리스 20260901
+Python 라이선스는 각 실행 환경에 있으며, 의존 구성요소의 고지는 다음 위치에 있습니다.
 Trading Journal.app/Contents/Resources/licenses/
 
-SUPPORT
-Donations are welcome:
+후원
+후원은 언제나 환영합니다.
 https://buymeacoffee.com/jungjung

@@ -1,0 +1,54 @@
+TRADING JOURNAL FOR MAC
+
+INSTALL
+1. Open the DMG.
+2. Drag Trading Journal into Applications.
+3. Open Trading Journal from Applications.
+4. Choose a journal password, then use the setup wizard to add wallets and
+   read-only exchange/API keys. The setup code is filled in automatically.
+
+Works on Apple Silicon and Intel Macs with macOS 12 Monterey or later.
+Python is included. No Terminal, Node, pip, or developer tools are needed.
+An internet connection and your own provider keys are needed to sync live data.
+The optional upstream AI features require a separately installed Claude CLI.
+
+SIGNING
+The GitHub release notes list this build's signing and notarization status.
+Developer ID releases are signed by Seung Oh Jung. Apple notarization checks
+the submitted package; it does not certify the accuracy of trading records.
+Download official releases from:
+https://github.com/jungbtc/Trading-Journal-mac/releases
+
+YOUR DATA
+The journal, settings and keys stay on this Mac in:
+~/Library/Application Support/Trading Journal/
+Use Trading Journal > Open Data Folder to see it without Terminal.
+Replacing the app does not delete this folder. Deleting the app leaves it intact.
+The app only serves its dashboard on this computer (127.0.0.1).
+Quit the app to stop syncing. Leave it open while importing historical records.
+Closing the last window quits the app. It can take a few seconds to stop safely.
+
+If you forget the password, choose Trading Journal > Reset Login Password.
+This resets the login only; your journal and provider keys stay saved.
+If startup fails, choose Trading Journal > Open Logs for diagnostic files.
+Keep backups of your data folder. Do not share this folder or its credentials.
+
+SHARING
+Send the DMG file to another person. It contains the app and bundled runtimes,
+with no personal wallets, journal, passwords, or API keys.
+Each person sets up their own journal after installing it.
+
+SOURCE AND LICENSES
+Original project by extb001-afk and tj-bot contributors:
+https://github.com/extb001-afk/Trading-Journal
+The trading engine and dashboard are their work. Mac packaging by jungbtc:
+https://github.com/jungbtc/Trading-Journal-mac
+Upstream snapshot: 8e9a70c (version 2026.10.12.8).
+MIT license: Trading Journal.app/Contents/Resources/app/LICENSE
+Bundled Python 3.12.14: Astral python-build-standalone release 20260901.
+Python licenses are included inside each bundled runtime. Dependency notices:
+Trading Journal.app/Contents/Resources/licenses/
+
+SUPPORT
+Donations are welcome:
+https://buymeacoffee.com/jungjung
